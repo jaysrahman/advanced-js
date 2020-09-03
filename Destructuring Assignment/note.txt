@@ -1,0 +1,15 @@
+Array
+- Destructuring array awal dasar
+- Skipping items
+- Swap items --> Learn again
+- Return value pada function --> Learn again
+- Rest parameter ...
+
+Object
+- Destructuring object awal dasar
+- Assignment tanpa deklarasi object
+- Assign ke variable baru
+- Memberikan default value
+- Memberi nilai default + assign ke variable baru
+- Rest parameter
+- Mengambil field pada object, setelah dikirim sebagai parameter untuk function

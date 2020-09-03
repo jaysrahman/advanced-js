@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+
+<body>
+    <script>
+        // #1
+        // function init() {
+        //     let nama = 'Jays';
+
+        //     function tampilNama() { // Inner Function (Closure*)
+        //         console.log(nama);
+        //     }
+        //     console.dir(tampilNama);
+        // }
+        // init();
+
+        // #2
+        // function init() {
+        //     let nama = 'Jays';
+
+        //     function tampilNama() {
+        //         console.log(nama);
+        //     }
+        //     return tampilNama();
+        // }
+        // init();
+
+        // Contoh Closure #1
+        // function init() {
+        //     function tampilNama(nama) {
+        //         console.log(nama);
+        //     }
+        //     return tampilNama;
+        // }
+        // let panggilNama = init();
+        // panggilNama('Jays');
+        // panggilNama('Rahman');
+
+        // Contoh Closure #2
+        // function init() {
+        //     return function (nama) {
+        //         console.log(nama);
+        //     }
+        // }
+        // let panggilNama = init();
+        // panggilNama('Jays');
+        // panggilNama('Faiz');
+
+        // Function Factories
+        // function greetings(time) {
+        //     return function (name) {
+        //         console.log(`Hello ${name}, Good ${time}`);
+        //     }
+        // }
+
+        // let morning = greetings('morning');
+        // let afternoon = greetings('afternoon');
+        // let evening = greetings('evening');
+        // let night = greetings('night');
+
+        // morning('Jays');
+        // afternoon('Rahman');
+        // console.dir(evening('El'));
+        // console.dir(night);
+
+        // Private Method #1
+        // let add = function () {
+        //     let counter = 0;
+        //     return function () {
+        //         return ++counter;
+        //     }
+        // };
+
+        // let a = add();
+
+        // counter = 100;
+
+        // console.log(a());
+        // console.log(a());
+        // console.log(a());
+        // console.log(a());
+        // console.log(a());
+
+        // Private Method #2
+        // let add = (function () {
+        //     let counter = 0;
+        //     return function () {
+        //         return ++counter;
+        //     }
+        // })();
+
+        // counter = 100;
+
+        // console.log(add());
+        // console.log(add());
+        // console.log(add());
+        // console.log(add());
+        // console.log(add());
+    </script>
+</body>
+
+</html>

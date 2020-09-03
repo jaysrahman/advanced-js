@@ -1,0 +1,10 @@
+Destructuring function return value
+- Dasar
+- Banyak
+- Nilai default
+- Array harus urut walaupun cuma nama
+- Kalo mau gak urut return valuenya pake object
+
+Destructuring function arguments
+- menggunakan kurung kurawal untuk membungkus pada argument function
+- Jika bersarang maka menggunakan titik dua lalu kurung kurawal lagi didalamnya

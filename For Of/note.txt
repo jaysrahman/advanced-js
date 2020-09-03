@@ -1,0 +1,19 @@
+-->  for..of <--
+
+- Array
+ - Menampilkan string dari array menggunakan for biasa, forEach dan for..of
+ - Menampilkan value dan index dari array menggunakan forEach
+ - Ngakalin ngambil value dan index dari array menggunakan for...of dengan method entries(), dengan mendestructure array nya
+
+- String
+ - forEach khusus digunakan untuk mengulang array, jadi tidak bisa digunakan untuk string
+ - Menampilkan per huruf dari string menggunakan for...of
+
+- NodeList
+ - Jika menggunakan browser versi terbaru maka bisa menggunakan forEach untuk mengulang nodeList
+ - Mengambil string dari nodeList li dari html dengan forEach dan for...of
+
+- Arguments
+ - Arguments != Array
+ - Menjumlahkan value pada array dengan reduce dan forEach (Jangan lupa return variable nya) karena mereka tidak bisa menjalankan arguments
+ - Menjumlahkan value pada arguments dengan for...of

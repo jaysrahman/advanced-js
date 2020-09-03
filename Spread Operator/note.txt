@@ -1,0 +1,23 @@
+Spread Operator (Memecah (expand/unpack) iterables menjadi single element)
+
+Array - Dasar
+- Memecah array ke tiap-tiap elementnya dengan memanggil array dengan menambahkan titik tiga didepannya, lalu memecahnya lagi dengan memanggil element dengan indexnya yang diawali dengan titik tiga juga.
+
+Kapan menggunakan spread operator
+ 
+- Menggabungkan 2 array
+ - Mengunakan spread operator maka akan bisa digabungkan kedalam satu array, sedangkan jika tidak, maka akan ada array yang memiliki 2 array didalamnya.
+ - Bisa juga menggunakan fungsi concat, tetapi tidak sefleksibel menggunakan spread operator yang bisa diisi ditengahnya
+
+- Meng-copy array
+ - Cara pertama yang salah yaitu dengan membuat dua array, lalu array kedua diisi dengan nama array pertama. Cara ini tidak benar karena array kedua tidak benar-benar mengcopy isinya tetapi merefrensi ke dalam array pertama.
+ - Cara yang benar yaitu dengan menambahkan spread operator kedalam isi array baru. Sehingga saat array yang baru diubah isinya, tidak mempengaruhi array yang dicopy
+
+- Mengambil data dari html dan menaruhnya kedalam array
+ - Cara pertama, dengan membuat array baru lalu memasukkan isi elemen kedalamnya dengan menggunakan for.
+ - Cara kedua, dengan menggunakan map. Tetapi perlu diingat bahwa yang kita ambil dari html adalah nodelist, maka harus dipecah dulu menggunakan spread operator.
+
+
+- Membuat transisi hover saat satu persatu huruf di hover
+ - Mengambil data nama dari h1  html lalu di spread kedalam array, setelah itu di map masing masing nya dan disisipkan span, lalu ditambahkan join('') agar menjadi string dan setelah itu dimasukkan kedalam html lagi.
+ - span itu inline, maka untuk bisa menggunakan scale, diubah menjadi inline-block dulu, translateY untuk keatas

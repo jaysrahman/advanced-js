@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+}
+
+.hover-trans {
+    text-align: center;
+    background-color: blue;
+    padding: 10px;
+    color: white;
+    font-size: larger;
+    transition: 0.3s;
+}
+
+.hover-trans h2 span {
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.hover-trans h2 span:hover {
+    cursor: pointer;
+    color: cyan;
+    transform: scale(2) translateY(-12px);
+}

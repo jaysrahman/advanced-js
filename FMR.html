@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter, Map and Reduce</title>
+</head>
+
+<body>
+
+    <script>
+        let angka = [0, 6, -3, -6, 9, 1, 3, -1];
+
+        // --> Filter
+
+        // Case : Find element which >= 3
+
+        // // -> With For
+        // const newAngka = [];
+        // for (let i = 0; i < angka.length; i++) {
+        //     if (angka[i] >= 3) {
+        //         newAngka.push(angka[i]);
+        //     }
+        // }
+        // console.log(newAngka);
+
+        // // -> With Filter
+        // const newAngka = angka.filter(function (a) {
+        //     return a >= 3;
+        // });
+        // console.log(newAngka);
+
+        // // -> With Filter (Arrow Funtion)
+        // const newAngka = angka.filter(a => a >= 3);
+        // console.log(newAngka);
+
+        // -------------------------------------------
+
+
+        // --> Map
+
+        // Case : Each element divide by 2
+
+        // // -> With Map (Arrow Funtion)
+        // const newAngka = angka.map(a => a * 2);
+        // console.log(newAngka);
+
+        // -------------------------------------------
+
+
+        // --> Reduce
+
+        // Case : Plus elements with 5 as first index
+
+        // // -> With Reduce
+        // const newAngka = angka.reduce((prev, curr) => prev + curr, 5);
+        // console.log(newAngka);
+
+        // --------------------------------------------------------------
+
+
+        // --> Filter, Map and Reduce (With Chaining Method)
+
+        // Case : Filter element > 4, Map each element to divide by 3, Reduce in plus all with 4 as first index
+
+        // // -> With Method Chaining
+        // const newAngka = angka.filter(a => a > 4)
+        //     .map(a => a * 3)
+        //     .reduce((prev, curr) => prev + curr, 4);
+        // console.log(newAngka);
+    </script>
+</body>
+
+</html>

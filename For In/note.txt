@@ -1,0 +1,4 @@
+For In
+- Creates a loop only iterating over enumerable (Properti pada object)
+- Mengulang peoperty dari object
+- Mengulang valuenya

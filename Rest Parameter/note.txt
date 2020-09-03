@@ -1,0 +1,17 @@
+Rest Parameter
+     Rest Paramater : Merepresentasikan argument pada function dengan jumlah yang tidak terbatas menjadi sebuah array
+
+Opening
+- Rest = Sisa
+- Mengambil argument dengan menuliskan titik tiga yang diikuti nama apapun, maka akan mengambil isinya lalu dikembalikan sebagai array (Jika diawal ditentukan misal: a, b, ...args Maka akan terpanggil yang pertama dan kedua, dan sisanya menjadi array)
+- Hanya bisa digunakan di akhir argument
+- Jika menggunakan arguments, maka tidak mengembalikan array, kecuali menggunakan fungsi Array.from() atau spread operator
+
+Coba Kasus
+- Menjumlahkan isi argument
+ - Menggunakan for of
+ - Menggunakan Reduce
+- Saat Array destructuring
+- Saat Object Destructuring
+- Filtering
+ - Menggunakan function filter dan typeof  

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object (Revisited)</title>
+</head>
+
+<body>
+    <script>
+        // 1. Object Literal (Tidak efektif untuk object yang banyak)
+        // let caracter1 = {
+        //     name: 'Jays Rahman Elfaiz',
+        //     energy: 10,
+        //     eat: function (feed) {
+        //         this.energy = this.energy + feed;
+        //         console.log(`Happy to eat ${this.name}`);
+        //     },
+        //     play: function (hour) {
+        //         this.energy = this.energy - hour;
+        //         console.log(`Happy to eat ${this.name}`);
+        //     }
+        // }
+        // let caracter2 = {
+        //     name: 'Munawir Ahmad Muhtadi',
+        //     energy: 15,
+        //     eat: function (feed) {
+        //         this.energy += feed;
+        //         console.log(`Happy to eat ${this.name}`);
+        //     },
+        //     play: function (hour) {
+        //         this.energy -= hour;
+        //         console.log(`Happy to play ${this.name}`);
+        //     }
+        // }
+
+        // 2. Function Declaration
+        // function caracters(name, energy) {
+
+        //     let caracter = {};
+
+        //     caracter.name = name;
+        //     caracter.energy = energy;
+
+        //     caracter.eat = function (feed) {
+        //         this.energy += feed;
+        //         console.log(`Happy to eat ${this.name}`);
+        //     }
+
+        //     caracter.play = function (hour) {
+        //         this.energy -= hour;
+        //         console.log(`Happy to play ${this.name}`);
+        //     }
+
+        //     return caracter;
+        // }
+
+        // let jays = caracters('Jays Rahman Elfaiz', 10);
+        // let munawir = caracters('Munawir Ahmad Muhtadi', 15);
+
+        // 3. Constructor Function (Keyword New)
+        // function caracter(name, energy) {
+
+        //     this.name = name;
+        //     this.energy = energy;
+
+        //     this.eat = function (feed) {
+        //         this.energy += feed;
+        //         console.log(`Happy to eat ${this.name}`);
+        //     }
+
+        //     this.play = function (hour) {
+        //         this.energy -= hour;
+        //         console.log(`Happy to play ${this.name}`);
+        //     }
+
+        // }
+
+        // let jays = new caracter('Jays Rahman Elfaiz', 10);
+        // let munawir = new caracter('Munawir Ahmad Muhtadi', 15);
+
+        // 4. Object.create()
+        // Before
+        // const caractersMethod = {
+
+        //     eat: function (feed) {
+        //         this.energy += feed;
+        //         console.log(`Happy to eat ${this.name}`);
+        //     },
+
+        //     play: function (hour) {
+        //         this.energy -= hour;
+        //         console.log(`Happy to play ${this.name}`);
+        //     },
+
+        //     sleep: function (hour) {
+        //         this.energy += hour * 2;
+        //         console.log(`Happy to sleep ${this.name}`);
+        //     }
+
+        // }
+
+        // function caracters(name, energy) {
+
+        //     let caracter = {};
+
+        //     caracter.name = name;
+        //     caracter.energy = energy;
+        //     caracter.eat = caractersMethod.eat;
+        //     caracter.play = caractersMethod.play;
+        //     caracter.sleep = caractersMethod.sleep;
+
+        //     return caracter;
+
+        // }
+
+        // let jays = caracters('Jays Rahman Elfaiz', 10);
+        // let munawir = caracters('Munawir Ahmad Muhtadi', 15);
+
+        // After
+        // const caractersMethod = {
+
+        //     eat: function (feed) {
+        //         this.energy += feed;
+        //         console.log(`Happy to eat ${this.name}`);
+        //     },
+
+        //     play: function (hour) {
+        //         this.energy -= hour;
+        //         console.log(`Happy to play ${this.name}`);
+        //     },
+
+        //     sleep: function (hour) {
+        //         this.energy += hour * 2;
+        //         console.log(`Happy to sleep ${this.name}`);
+        //     }
+
+        // }
+
+        // function caracters(name, energy) {
+
+        //     let caracter = Object.create(caractersMethod);
+
+        //     caracter.name = name;
+        //     caracter.energy = energy;
+
+        //     return caracter;
+
+        // }
+
+        // let jays = caracters('Jays Rahman Elfaiz', 10);
+        // let munawir = caracters('Munawir Ahmad Muhtadi', 15);
+    </script>
+</body>
+
+</html>
