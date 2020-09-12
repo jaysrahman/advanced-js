@@ -1,0 +1,32 @@
+- Dasar Javacript - Bahasa pemrograman tingkat tinggi dan dinamis yang secara umum dapat berjalan pada browser.
+- Javascript - Is a single-threaded, non-blocking, asynchronus and concurrent language.
+- Javascript is a single threaded
+- v8 engine heap and stack
+- Try the :
+First
+	console.log('satu');
+	console.log('dua');
+	console.log('tiga');
+Second
+	function kalikan(a, b) {
+		return a * b;
+	}
+	function hitungLuas(sisi) {
+		return kalikan(sisi, sisi);
+	}
+	function cetakLuasKotak(sisi) {
+		const luas = hitungLuas(sisi);
+	console.log(luas);
+	}
+
+	cetakLuasKotak(5);
+- http://latenflip.com/loupe/
+ - by. Phillip Roberts
+ - https://www.youtube.com/watch?v=8aGhZQkoFbQ
+ - What the heck is the event loop anyway?
+- Try Again :
+First
+	console.log('satu');
+	setTimeout(() => console.log('dua'), 5000)
+	console.log('tiga');
+- (Heap - [ Stack -> Web API -> Callback Queue -> Event Loop -> Repeat ])
