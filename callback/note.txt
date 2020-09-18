@@ -1,0 +1,24 @@
+Callback
+- Function yang dikirimkan sebagai parameter pada function yang lain -moz
+- Function yang dieksekusi setelah function lain selesai dijalankan  
+
+Try
+- Synchronous Callback Code "tampilkanPesan() yang mendapat parameter function halo()"
+	- Normal Code
+	- With arrow function
+- Make an array with datas
+	- Make synchronous example to get long, with looping and "let date = new Date"
+
+- Make ajax with js native / vanilla js
+	- If it block by CORS, try to open with server
+	- To make output in JSON, try JSON.parse(results)
+	- Loop by forEach to get "nama"
+	- Try with 'mulai - first' and 'selesai - last'
+
+- Make ajax with jquery
+	- Don't forget to call jquery
+	- > url
+		> success
+		> error
+	- Try call 'nama' again
+	- Try responseText for error message

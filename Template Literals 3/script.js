@@ -11,6 +11,28 @@ function bioFun(strings, ...values) {
 const bio = bioFun `Halo, nama saya ${name}, biasa dipanggil ${nickname}, saya berumur ${age} tahun, alamat lengkap saya adalah ${address}`;
 document.querySelector('.tt').innerHTML = bio;
 
+// Colorize last three of string
+let num = document.querySelector('.num').innerHTML;
+let first = '';
+let last = ''
+for (let index = 0; index < num.length; index++) {
+    if (index > num.length - 4) {
+        last += num[index];
+    } else {
+        first += num[index];
+    }
+}
+console.log(first);
+console.log(last);
+
+function numColorized(strings, first, last) {
+    return `${first}<span class='cl'>${last}</span>`;
+}
+
+const cl = numColorized `${first}${last}`;
+console.log(cl);
+document.querySelector('.num').innerHTML = cl;
+
 // Sanitize
 function sanitize(strings, ...values) {
     const dirty = strings.reduce((prev, next, i) => `${prev}${next}${values[i] || ''}`, '');
